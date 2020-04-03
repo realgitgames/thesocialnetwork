@@ -1,0 +1,35 @@
+{
+  "name": "@realgitgames/thesocialnetwork",
+  "version": "0.0.0",
+  "description": "A git based [indie web](https://indieweb.org/) social network.",
+  "main": "prettier.config.js",
+  "private": true,
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realgitgames/thesocialnetwork.git"
+  },
+  "keywords": [],
+  "author": "Andreas Adam <andreas.sahle@gmail.com> (https://pixelmord.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realgitgames/thesocialnetwork/issues"
+  },
+  "homepage": "https://github.com/realgitgames/thesocialnetwork#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2"
+  }
+}
